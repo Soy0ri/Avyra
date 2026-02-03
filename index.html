@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hytale Cheat GUI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="hud">
+    <div class="hint">Нажми <span>Right Shift</span>, чтобы открыть меню</div>
+  </div>
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="menu" role="dialog" aria-label="Cheat меню">
+      <header class="menu__header">
+        <div>
+          <h1>Hytale Cheat GUI</h1>
+          <p>Легкое управление функциями</p>
+        </div>
+        <button class="close" id="closeButton" aria-label="Закрыть меню">✕</button>
+      </header>
+
+      <section class="menu__section">
+        <h2>Функции</h2>
+        <div class="toggle-grid">
+          <button class="toggle" data-feature="full-bright">
+            <span>Full Bright</span>
+            <small>Максимальная яркость</small>
+          </button>
+          <button class="toggle" data-feature="aim">
+            <span>Aim Assist</span>
+            <small>Улучшенный прицел</small>
+          </button>
+          <button class="toggle" data-feature="fly">
+            <span>Fly</span>
+            <small>Свободный полет</small>
+          </button>
+          <button class="toggle" data-feature="no-clip">
+            <span>No Clip</span>
+            <small>Прохождение сквозь стены</small>
+          </button>
+        </div>
+      </section>
+
+      <section class="menu__section">
+        <h2>Статус</h2>
+        <ul class="status" id="statusList">
+          <li><span>Full Bright</span><strong>OFF</strong></li>
+          <li><span>Aim Assist</span><strong>OFF</strong></li>
+          <li><span>Fly</span><strong>OFF</strong></li>
+          <li><span>No Clip</span><strong>OFF</strong></li>
+        </ul>
+      </section>
+
+      <footer class="menu__footer">
+        <p>Интерфейс демонстрационный, без взаимодействия с клиентом игры.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
